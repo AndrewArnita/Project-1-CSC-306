@@ -1,0 +1,21 @@
+Hello,
+Since this is my first web design project, and since I watched every session video, I liked it very much and I wanted to test my knowledge when doing this assignment, so I decided to go a bit beyond my knowledge since I like to explore and add things more than I am able to, so I added a bit of hovering, external fonts and styles to fit my needs in order to have a UI/UX on my website.
+
+Issues:
+- When testing responsiveness I had an issue with my nav bar when it gets smaller than 450px it starts having a margin to the right and its filled with a white space. So I fixed it by using the position:absolute; in my body in media query.
+
+- I have a weird glitch when i refresh my screen the font reverts back to default and than reverts back to my donwloaded font. I searched about this issue and its bcz the font needs to be downloaded for a quick second first and then I can do something like that:
+
+<link rel="preload" as="font" type="font/woff2" 
+  href="./fonts/muli-v12-latin-regular.woff2" crossorigin>
+
+but I'd rather not use advance stuff in this project.
+
+Some of things I wanted to add:
+- Animations overall make my website better looking
+- Animations when going from bottom to the top of the page in a smoother way
+- Hamburger menu
+- Change the color of the selected page in the navigation bar selected page (active page)
+- How to use mix-blend-mode: difference; when I have an image behind the text so it changes the color automatically in order for the user to read better
+
+That's it basically, I worked my way around my experience with web and I felt comfortable and excited to work on this project :)

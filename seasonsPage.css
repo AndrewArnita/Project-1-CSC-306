@@ -1,0 +1,81 @@
+/*adding a custom font*/
+@font-face { 
+    font-family: axiforma;
+    src: url(fonts/Helvatica-Fonts/FontsFree-Net-Axiforma3woff2.ttf);
+}
+
+/*adding a custom font 2*/
+@font-face {
+    font-family: helvatica;
+    src: url(fonts/Helvatica-Fonts/FontsFree-Net-sddd4.ttf);
+}
+
+/* Body in general overriding the galleryPage.css for a new background */
+body {
+    font-family: axiforma;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("images/battlepass2.png");
+    background-size: 10em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+}
+
+/* for the fortnite image link at the left of nav bar */
+img:hover{
+    transition: transform .5s, filter .5s ease-in-out;
+    transform: scale(1.2);
+}
+
+.seasonrow{
+    text-align: center;
+}
+
+div.seasonscolumn{
+    padding: 2em;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.column img{
+    margin: 2em;
+    cursor: pointer;
+    height: 15em;
+    width: 25em;
+    border: 0.2em solid black;
+    box-shadow: 0 0.5em 1em black;
+    
+}
+
+.title{
+    display: block; /*in order to have them next to each other more easily*/
+    font-size: 1em;
+    color:black;
+}
+
+h1 {
+    margin: 0%;
+    margin-top: 3%;
+    font: helvatica;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* My website breaks at 149px */
+@media screen and (max-width: 640px) {
+    .navigationpanel a {
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    section div span a img{
+        padding: 10%;
+        width: 5em;
+    }
+	body {
+        /* background-color: red; */
+        position: absolute;
+	}
+}

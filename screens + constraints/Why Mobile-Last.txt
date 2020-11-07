@@ -1,0 +1,3 @@
+Hello,
+
+Since I had to deal with responsiveness mid project, and since I am working on my first project in web without being able to host my website on my mobile, so I decided to choose this approach because I didn't know in this project we should have breakpoints I thought in the 2nd project we will have, so in order to see more clearly my website on a mobile, I hosted my website on Xampp localhost server where I can see my website on my phone. I like to see websites that I am developing on pc cz it has wider and better UX. If the projects were already on local host and we are graded on our UI based on the mobiles' resolution definitely I would go to the Mobile-First approach.

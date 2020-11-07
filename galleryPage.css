@@ -1,0 +1,102 @@
+/*adding a custom font*/
+@font-face { 
+    font-family: axiforma;
+    src: url(fonts/Helvatica-Fonts/FontsFree-Net-Axiforma3woff2.ttf);
+}
+
+/*adding a custom font 2*/
+@font-face {
+    font-family: helvatica;
+    src: url(fonts/Helvatica-Fonts/FontsFree-Net-sddd4.ttf);
+}
+
+/* Body in general */
+body {
+    font-family: axiforma;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("images/fortnitelogopng.png");
+    background-size: 20em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+}
+
+/* for the fortnite image link at the left of nav bar */
+img:hover{
+    transition: transform .5s, filter .5s ease-in-out;
+    transform: scale(1.2);
+}
+
+h1{ 
+    margin: 0%;
+    margin-top: 3%;
+    font: helvatica;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* each row has 3 columns */
+.row {
+    text-align: center;
+    padding-top: 3em;
+}
+
+.column img{
+    /* colorize on hover */
+    transition: transform .5s, filter .5s ease-in-out;
+    filter: grayscale(80%);
+
+    margin: 2em;
+    cursor: pointer;
+    height: 15em;
+    width: 25em;
+    border: 0.2em solid black;
+    box-shadow: 0 0.5em 1em black;
+    border-radius: 25px 75px;
+}
+
+/* on hover get bigger */
+.column img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+}
+
+/* to center the title under the image */
+div.column{
+    vertical-align: top;
+    display: inline-block;
+}
+/* under the image title + description */
+.title{
+    display: block; /*in order to have them next to each other more easily*/
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+/* last centered text */
+#lasttitle {
+    margin-top: 2em;
+    font-family: axiforma;
+    font-size: 0.8em;
+    padding-top: 3em;
+}
+
+/* My website breaks at 149px */
+@media screen and (max-width: 640px) {
+    .navigationpanel a {
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    section div span a img{
+        padding: 10%;
+        width: 5em;
+    }
+	body {
+        /* background-color: red; */
+        position: absolute;
+	}
+}

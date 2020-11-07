@@ -1,0 +1,40 @@
+/* Navigation Panel on all pages*/
+.navigationpanel {
+    padding: 0%;
+    margin: 0%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(66, 38, 167), rgb(140, 46, 177));
+    overflow: auto;
+  }
+
+  /* Navigation Panel for anchors  */
+.navigationpanel a{
+    float: right;
+    text-align: center;
+    padding: 1em;
+    color: black;
+    text-decoration: #10a5ca;
+    font-size: 1em;
+}
+
+/* Navigation Panel for anchors on hover */
+.navigationpanel a:hover {
+    background-color: rgb(80, 41, 153);
+    color: whitesmoke;
+    transition: transform .5s, filter .5s ease-in-out;
+    transform: scale(0.95);
+  }
+
+  /* Navigation Panel only for span for the fortnite link on the left */
+.navigationpanel span {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+/* Navigation Panel on hover span */
+.navigationpanel span a:hover {
+    background-color: rgb(80, 41, 153);
+}

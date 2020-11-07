@@ -1,0 +1,117 @@
+/*adding a custom font*/
+@font-face { 
+    font-family: axiforma;
+    src: url(fonts/Helvatica-Fonts/FontsFree-Net-Axiforma3woff2.ttf);
+}
+/*adding a custom font 2*/
+@font-face {
+    font-family: burban;
+    src: url(fonts/Helvatica-Fonts/Helvetica-Condensed-Bold.otf);
+}
+
+/* Overriding the Navigation Panel colors on this page*/
+.navigationpanel {
+    background-image: linear-gradient(to bottom right, rgb(207, 130, 5), rgb(255, 249, 133));
+}
+.navigationpanel a:hover {
+    background-color: rgb(168, 152, 4);
+}
+.navigationpanel span a:hover {
+    background-color:  rgb(168, 152, 4);
+}
+
+.clearfix{
+    clear: both;
+}
+
+#exp{
+    transition: transform .5s, filter .5s ease-in-out;
+    margin: 4em; 
+    width: 35em; 
+    border: 0.2em solid black; 
+    box-shadow: 0 0.5em 1em black; 
+    border-radius: 25px 75px;
+}
+
+#exp:hover{
+    transition: transform .5s, filter .5s ease-in-out;
+    transform: scale(1.15);
+}
+
+/* Body in general */
+body {
+    font-family: axiforma;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    /* background-image: linear-gradient(to bottom left,
+    rgb(140, 46, 177), rgb(66, 38, 167)); */
+}
+
+/* for the fortnite logo in the top left nav bar */
+section div a img:hover{
+    transition: transform .5s, filter .5s ease-in-out;
+    transform: scale(1.3);
+}
+
+.divv{
+    margin-top: 8em;
+    text-align: center;
+}
+
+#title{ 
+    font-size: 2.4em;
+}
+
+/* have less font size than title */
+#title2{ 
+    font-size: 2.2em;  
+}
+
+
+/* only paragraph inside article of body */
+article p{
+    font-style: italic;
+    font-size: 1.4em;
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    display: block; 
+    margin-top: 1.5em;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%;
+    max-width: 100%;
+    color: rgb(66, 38, 167);
+    text-align: center;
+
+}
+/* last centered text */
+#lasttitle {
+    margin-top: 2em;
+    font-family: axiforma;
+    font-size: 0.8em;
+    padding-top: 3em;
+}
+
+/* for the exp image to be centered */
+@media screen and (max-width: 800px) {
+    #exp{
+        width: 27em;
+    }
+}
+
+/* My website breaks at 149px */
+@media screen and (max-width: 640px) {
+    .navigationpanel a {
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    section div span a img{
+        padding: 10%;
+        width: 5em;
+    }
+	body {
+        /* background-color: red; */
+        position: absolute;
+	}
+}
